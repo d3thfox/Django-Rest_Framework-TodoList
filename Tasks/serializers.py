@@ -8,7 +8,7 @@ class TaskSerializer(serializers.ModelSerializer):
         fields = 'id title descriptions completed created'.split()
 
 class TaskValidSerializer(serializers.Serializer):
-    title = serializers.CharField(max_length=50)
-    descriptions = serializers.CharField()
+    title = serializers.CharField(max_length=100)
+    descriptions = serializers.CharField(max_length=200)
     completed = serializers.BooleanField()
  
