@@ -9,6 +9,6 @@ class TaskSerializer(serializers.ModelSerializer):
 
 class TaskValidSerializer(serializers.Serializer):
     title = serializers.CharField(max_length=100)
-    descriptions = serializers.CharField(max_length=200)
+    descriptions = serializers.CharField()
     completed = serializers.BooleanField()
  
